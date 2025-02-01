@@ -2,6 +2,9 @@ title: Boran Takak
 author: Boran Takak
 subtitle: blog
 
+remote_theme: ankitsultana/researcher@gem
+
+
 url: "izuta-k.github.io"
 baseurl: "/"
 
