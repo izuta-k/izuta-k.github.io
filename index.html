@@ -1,0 +1,30 @@
+---
+# front matter
+title: Boran Takak
+
+---
+
+
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title> {{ page.title }} </title>
+  </head>
+  <body>
+    <p>{{ "Bu blogu açmak yordu beni gerçekten ama umarım değmiştir uğraştığıma ve sürekli bir şeyler yazar yüklerim" | downcase }}</p>
+
+
+    <h4> Yazılar </h4>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <p> <a href="{{ post.url}}"> {{ post.title}} </a> </p>
+    </li>
+  {% endfor %}
+</ul>
+
+
+  </body>
+</html>

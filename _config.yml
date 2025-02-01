@@ -1,0 +1,30 @@
+collections:
+    authors:
+     output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+
+
+navbar:
+ - name: "Anasayfa"
+   link: "/"
+ - name: "Ben"
+   link: "/about.html"
+ - name: "Yazılar"
+   link: "/blog.html"
+
+
+plugins:
+    - jekyll-feed
+    - jekyll-sitemap
+    - jekyll-seo-tag
