@@ -1,13 +1,13 @@
-title: Parchment
-author: pro-panda
-subtitle: The life of a frustrated engineer
+title: Boran Takak
+author: Boran Takak
+subtitle: blog
 
-url: "https://rahulbothra.com"
-baseurl: "/parchment"
+url: "izuta-k.github.io"
+baseurl: "/"
 
 footer_only_homepage: true
-footer_url: "https://github.com/rhl-bthr"
-footer_text: "Theme by rhl-bthr"
+footer_url: "https://github.com/izuta-k"
+footer_text: "weeping angel"
 
 profile-picture: assets/profile.png
 favicon_location: assets/favicon.ico
@@ -20,5 +20,5 @@ sass:
 navbar:
  - name: "About"
    link: "about"
- - name: "Resume"
-   absolute-link: "https://rahulbothra.com/cv.pdf"
+ - name: "Social"
+   absolute-link: "www.x.com/izumivondegure"
