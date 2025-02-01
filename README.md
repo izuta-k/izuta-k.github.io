@@ -1,4 +1,6 @@
-## Hi there 👋
+## Boran beyin şahsi mahrem blogu
+
+Blog kurdum ama daha oturtamadım :(( zamanla oturur umarım
 
 <!--
 **izuta-k/izuta-k** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
