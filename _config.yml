@@ -6,7 +6,7 @@ remote_theme: ankitsultana/researcher@gem
 
 
 url: "izuta-k.github.io"
-baseurl: "/"
+baseurl: "/izuta-k"
 
 footer_only_homepage: true
 footer_url: "https://github.com/izuta-k"
