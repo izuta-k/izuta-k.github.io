@@ -3,7 +3,6 @@ layout: default
 title: Alanda bulunmak
 ---
 
-# Bir alanda bulunmak
 Ağustos gibi Özdilek Starbucksta arkadaşımla(kaan) kahve içerken oturmayı tercih ettiğimiz yerleri karşılaştırmıştık. Kaan sokakta insanların hareket halinde olduğu yerleri tercih ettiğini söylerken, ben özellikle hareket olmayan ve koltukta yayılarak oturabileceğim bir yerde içmeyi tercih ettiğimi söylemiştim.
 Benim kendime rahat rahat oturabileceğim bir kahveci bulmamın zor olmasından yakındığım gibi Kaan da sokakta gelip geçen insanları izleyebileceği bir kahveciyi bulmasının zorluğundan yakınıyordu. Aslında oturmak için yer ararken ben çevremden kopabileceğim ve oturduğum masayı alandan koparabileceğim bana ait olacak bir yer arıyorken, Kaan bulunduğu alanı gözlemlemek ve o alanın bir parçası olabilmek istiyordu.
 Günün sonunda ne oturduğumuz starbucks bizim arayışlarımıza bir çözüm olabiliyordu ne de İstanbulun herhangi bir yerindeki kahveciler böyle bir çözüm olmak istiyordu. Aslında sadece kahveciler değil şehirde hiç bir yer ne oranın bir parçası hissetmeni istiyordu ne de orayı sahiplenebileceğin bir yer haline gelmek. Bulunduğun her mekan senin kontrollü ve belirli şartlar altında vakit geçirdiğin yerler haline geliyordu. Her alanın kullanımına dair belirli şartlar ve senin orada bulunman için de koşullar vardı.
