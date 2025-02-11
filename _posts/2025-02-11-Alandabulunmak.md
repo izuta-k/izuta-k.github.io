@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bir alanda bulunmak
+title: Alanda bulunmak
 ---
 
 # Bir alanda bulunmak
