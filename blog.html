@@ -6,7 +6,7 @@ title: Yazılar
 <ul>
   {% for post in site.posts %}
     <li>
-      <p> <a href="{{ post.url}}"> {{"---> "| append:post.title}} </a> </p>
+      <p> <a href="{{ post.url}}"> {{"---> "| article.published_at | date: "%b %d, %y" |append:post.title}} </a> </p>
     </li>
   {% endfor %}
 </ul>
