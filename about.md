@@ -9,10 +9,12 @@ title: Ben
 
 Alanya doğumlu bir siyaset bilimi öğrencisi. Bu aralar yazı yazma yeteneklerimi oturtmaya çalışıyorum. Bu blog da büyük oranda bu çabanın bir meyvesi.
 
+
 ---
 
 - **Marmara Üniversitesi** / Siyaset Bilimi ve Kamu Yönetimi
   2020 - 2026
+  
   Marmara Üniversitesi Fransızca Siyaset Bilimi ve Kamu Yönetimi programı.
 
 ---
