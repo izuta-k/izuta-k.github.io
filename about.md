@@ -1,28 +1,19 @@
 ---
 # front matter
 layout: default
-title: Hakkımda
+title: Ben
 ---
 
 
 # Boran Takak
 
-Şimdilik yer doldurması için cvmi deepseke yazdırttım. Daha güzel bişiler yazarım belki.
-
+Alanya doğumlu bir siyaset bilimi öğrencisi. Bu aralar yazı yazma yeteneklerimi oturtmaya çalışıyorum. Bu blog da büyük oranda bu çabanın bir meyvesi.
 
 ---
-
-**Eğitim**
 
 - **Marmara Üniversitesi** / Siyaset Bilimi ve Kamu Yönetimi
   2020 - 2026
   Marmara Üniversitesi Fransızca Siyaset Bilimi ve Kamu Yönetimi programı.
-
-- **Université Libre de Bruxelles** / Erasmus+
-  2023 - 2024
-
-- **Nişantaşı Anadolu Lisesi**
-  2014 - 2018
 
 ---
 
@@ -30,10 +21,8 @@ title: Hakkımda
 
 - **Yetkin Gençler** / Sertifika
   2021
-  Kariyer planlama, teknoloji okuryazarlığı, algoritmik düşünme ve girişimcilik üzerine 12 haftalık eğitim programını tamamladım.
 
 - **The Duke of Edinburgh's International Award** / Gümüş Seviye
-  2016 - Türkiye
-  Sosyal sorumluluk, kendini geliştirme ve takım çalışması hedeflerimi yerine getirerek Gümüş seviyesini tamamladım.
+  2016
 
 ---
