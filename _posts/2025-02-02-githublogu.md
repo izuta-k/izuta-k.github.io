@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Şubat ayı workflow planı
 ---
 
