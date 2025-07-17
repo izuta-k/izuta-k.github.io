@@ -1,19 +1,20 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="page-subtitle">
-    {% for tag in page.tags %}
-        {% if page.tags.first == tag %}
-            <b>[</b>
-        {% endif %}
-        <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
-        {% if page.tags.last == tag %}
-            <b>]</b>
-        {% else %}
-            ,
-        {% endif %}
-    {% endfor %}
-</div>
+{% include head.html %}
 
-{{content}}
+<body>
+    <div class="container">
+        {% include navbar_post.html %}
+        <div class="page-title">
+            {{page.title}}
+        </div>
+        <div class="content">
+            {{ content }}
+        </div>
+        {% include footer.html %}
+    </div>
+</body>
+
+
+

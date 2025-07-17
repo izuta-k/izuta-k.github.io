@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Sosyal Medya ve 19 Mart
 ---
 
