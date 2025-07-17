@@ -1,6 +1,6 @@
 - name: Anasayfa
   link: /
 - name: Ben
-  link: /about.html
+  link: /Ben.html
 - name: Yazılar
-  link: /blog.html
+  link: /Yazilar.html
