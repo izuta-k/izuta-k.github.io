@@ -5,20 +5,13 @@
 
 <body>
     <div class="container">
-        {% include navbar_post.html %}
-        {% include return_button.html %}
-
+        {% include navbar.html %}
         <div class="page-title">
             {{page.title}}
         </div>
         <div class="content">
             {{ content }}
         </div>
-
-        {% include return_button.html %}
         {% include footer.html %}
     </div>
 </body>
-
-
-
