@@ -4,15 +4,21 @@ layout: default
 title: Boran Takak
 ---
 
-## ----
-Kendin hakkında bir sayfa hazırlamak çok zormuş.
+
+Bir insanı tanımanın en iyi yolunun onun vaktini nasıl geçirdiği ve kendini gelecek zamanda nasıl bir insan olarak gördüğünü öğrenmek olduğunu düşünüyorum. Bu yüzden bu sayfada uzun uzun kendimi anlatmak yerine nelerle uğraştığımı ve yakın zamanda neler yapmayı umduğumu göstereceğim.
+
+
+## SkillSet
+
+
+### Dil
+> Fransızca(B1), İngilizce(C1)
+
+### Teknik
+> **Python**(pandas), **QGIS**, **Excel**, **Jupyter**, 
+
 
 ### Steam Stats
-- Dota 2: 1315.7 Saat 
-- EU4: 430.7 Saat
-- TF2: 357.6 Saat 
-- HOI4: 308.4 Saat 
-- Factorio: 285.7 Saat 
-- The Long Dark: 88.3 Saat 
-- Stardew Valley: 50.6 Saat
+> Dota 2: 1315.7 Saat <br>EU4: 430.7 Saat
+ <br>TF2: 357.6 Saat  <br>HOI4: 308.4 Saat <br>Factorio: 285.7 Saat <br>The Long Dark: 88.3 Saat <br>Stardew Valley: 50.6 Saat
 

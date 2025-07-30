@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "Inconsolata";
-  background-color: #FFFFDD;
+  background-color: #dfe0e2;
   min-height: 100%; }
 
 a {
@@ -36,13 +36,15 @@ code {
     display: inline-block;
     margin: 0;
     padding: 5px 0 5px 0;
-    margin-left: 20px; }
+    margin-left: 20px;
+    color: #e6c700; }
   .navbar li {
     list-style-type: none;
-    margin: 0 5px 0 10px; }
+    margin: 0 5px 0 10px;
+    color: #e6c700; }
   .navbar .site-title {
     font-size: 32px;
-    color: #272727;
+    color: #ec6b2d;
     display: inline-block; }
 
 .post-card {
@@ -50,7 +52,7 @@ code {
   margin-bottom: 1em; }
   .post-card .title {
     max-width: 500px;
-    color: #272727;
+    color: #0b3536;
     display: inline-block;
     font-size: 30px; }
   .post-card .details {
@@ -69,11 +71,13 @@ code {
   text-align: center;
   font-size: xx-large;
   font-weight: bold;
-  line-height: 2; }
+  line-height: 2;
+  color: #0b3536; }
 
 .page-subtitle {
   text-align: center;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  color: #0b3536; }
 
 .footer {
   text-align: center;
@@ -112,8 +116,9 @@ code {
       width: 100%;
       float: none; } }
 .content {
-  line-height: 1.5; }
+  line-height: 1.2; }
   .content h1, .content h2, .content h3, .content h4 {
+    color: #0b3536;
     margin-block-start: 2em !important;
     margin-block-end: 0em !important; }
   .content h1:after, .content h2:after, .content h3:after, .content h4:after {
@@ -123,13 +128,14 @@ code {
     border-top: 0.5px solid rgba(0, 0, 0, 0.1);
     border-bottom: 0.5px solid rgba(50, 50, 50, 0.3); }
   .content ol {
+    color: #635045;
     counter-reset: list; }
   .content ol > li {
     list-style-position: none;
     position: relative;
     list-style: none;
-    margin-top: 5px;
-    margin-bottom: 5px; }
+    margin-top: 3px;
+    margin-bottom: 3px; }
   .content ul > li {
     margin: 5px 0 5px 0; }
   .content ul {
@@ -169,7 +175,7 @@ code {
   .content .color-blue {
     color: #0062ff; }
   .content .highlight-red {
-    background-color: #ffaaaa; }
+    background-color: #f54123; }
   .content .highlight-orange {
     background-color: #ffd486; }
   .content .highlight-green {
