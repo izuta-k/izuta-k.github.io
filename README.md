@@ -1,24 +1,7 @@
+
 ## Boran beyin şahsi mahrem blogu
 
-Github üzerinden publish eylediğim yazılar ve falan filan
+Bu blogu biraz şahsi bir portfolyo ve yazdığım yazıları biriktirebileceğim bir alana dönüştürmek için açtım. 
 
+Sağdan soldan gördüğüm jekyll temalarından esinlenip şekillendiriyorum siteyi. Html ve css kodu yazmak çok ilgimi çekmediği için sadece burayı bana hoş gösterip çalıştırabilecek kadar öğrenip yaptığım için css ve html kodları gerçekten çok kötü durumda olabilir. Pek bir fikrim de yok açıkçası.
 
-
-
-
-
-
-<!--
-**izuta-k/izuta-k** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: burayı okuyorsan bana mail atabilirsin 
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
