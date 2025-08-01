@@ -1,8 +1,29 @@
+/*LIBERTINUS CSS CLASSES
+ * .libertinus-sans-regular {
+ *  font-family: "Libertinus Sans", sans-serif;
+ *  font-weight: 400;
+ *  font-style: normal;
+ * }
+ *
+ * .libertinus-sans-bold {
+ *  font-family: "Libertinus Sans", sans-serif;
+ *  font-weight: 700;
+ *  font-style: normal;
+ * }
+ *
+ * .libertinus-sans-regular-italic {
+ *  font-family: "Libertinus Sans", sans-serif;
+ *  font-weight: 400;
+ *  font-style: italic;
+ * }
+ *
+ */
 body {
   margin: 0;
-  font-family: "Inconsolata";
+  font-family: "Libertinus Sans", sans-serif;
   background-color: #dfe0e2;
-  min-height: 100%; }
+  min-height: 100%;
+  text-align: justify; }
 
 a {
   text-decoration: none;
@@ -80,7 +101,6 @@ code {
   color: #0b3536; }
 
 .footer {
-  text-align: center;
   font-size: small;
   margin-top: 2em;
   margin-bottom: 1em; }
@@ -118,10 +138,10 @@ code {
 .content {
   line-height: 1.2; }
   .content h1, .content h2, .content h3, .content h4 {
-    color: #0b3536;
-    margin-block-start: 2em !important;
-    margin-block-end: 0em !important; }
+    text-align: left;
+    color: #0b3536; }
   .content h1:after, .content h2:after, .content h3:after, .content h4:after {
+    text-align: left;
     content: '';
     display: block;
     width: 50%;
@@ -139,14 +159,14 @@ code {
   .content ul > li {
     margin: 5px 0 5px 0; }
   .content ul {
-    padding: 0 20px 0 20px; }
+    padding: 0 5px 0 5px; }
   .content ol {
-    padding: 0 30px 0 30px; }
+    padding: 0 5px 0 5px; }
   .content ol > li:before {
     content: "[" counter(list,decimal) "] ";
     counter-increment: list;
     position: absolute;
-    left: -30px; }
+    left: -15px; }
   .content blockquote {
     border-left: 5px solid #333333;
     margin: 5px 0;
@@ -163,8 +183,8 @@ code {
       .content .profile-picture img {
         margin-top: -5px; } }
   .content img {
-    text-align: center;
-    margin: 10px 10px 10px 10px;
+    text-align: right;
+    margin: 5px 5px 5px 5px;
     max-width: 740px; }
   .content .color-red {
     color: #FF0F00; }

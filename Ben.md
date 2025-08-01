@@ -8,14 +8,12 @@ title: Boran Takak
 Bir insanı tanımanın en iyi yolunun onun vaktini nasıl geçirdiği ve kendini gelecek zamanda nasıl bir insan olarak gördüğünü öğrenmek olduğunu düşünüyorum. Bu yüzden bu sayfada uzun uzun kendimi anlatmak yerine nelerle uğraştığımı ve yakın zamanda neler yapmayı umduğumu göstereceğim.
 
 
-## SkillSet
-
-
+## Skill
 ### Dil
 > Fransızca(B1), İngilizce(C1)
 
 ### Teknik
-> **Python**(pandas), **QGIS**, **Excel**, **Jupyter**, 
+> **Python**(NumPy, pandas, matplotlib, SciPy), **QGIS**, **SQL**, **Jupyter**, **HTML&CSS**, **Excel**
 
 
 ### Steam Stats
