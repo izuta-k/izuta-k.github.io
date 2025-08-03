@@ -19,7 +19,7 @@ ITA bu haliyle aslında hoş bir yan proje oldu. IBB açık veri portalından al
 
 Bir kaç tane grafikle oynamayı denedim ama çok fazla veri olduğu için ya bu veriyi daha da şekillendirmek gerekecekti ya da biraz da odaklı bir analiz yapmak lazımdı. Ben de veriyle oynamak istemediğim için (biraz da üşendiğimden) bari 5 yıllık karşılaştırma yapsın belki yıllara göre bir şeyler gözükür falan dedim.
 
-![Şişlinin 5 yılı](assets/post_images/sislinin_5yili.png)
+![Şişlinin 5 yılı](/assets/post_images/sislinin_5yili.png)
 
 Bu dediğim şeyden şans eseri güzel bir sonuç aldım aslında. Notebookun sonunda şişlinin 5 yıllık karşılaştırmasının yapıldığı yerde mesai çıkış saatinde 2020 yılı uçmuş hallerdeyken diğer yıllar bu neredeyse yarılanıyor. Pek derinlemesine araştırmasını yapmadım ama hem mecidiyeköydeki metro hatları 2020 sonbaharında açıldığı için hem de oradaki bir çok durak düzenlendiği için (beşiktaşla birlikte) sanırım bu etki ortaya çıkmış. Bir yandan bu satırları yazarken 2020 şubatında korona salgınına rağmen o kadar yüksek olmasının da biraz garip olduğunu düşünüyorum ama bu konuda herhangi bir şey yapacak olsam bile kesinlikle bu aralar yapmayacağım. :PPP
 
