@@ -28,7 +28,7 @@ This blog. I just wanted a blogger to write more consistently and put it out the
 ## Languages
 > French(B1), English(C1)
 
-## Teknik
+## Technical Skills
 > **Python**(NumPy, pandas, matplotlib, SciPy), **QGIS**, **SQL**, **Jupyter**, **HTML&CSS**, **Excel**
 
 
