@@ -16,12 +16,12 @@ defaults:
 
 
 navbar:
- - name: "Anasayfa"
+ - name: "Homepage"
    link: ""
- - name: "Ben"
-   link: "Ben.html"
- - name: "Yazılar"
-   link: "Yazilar.html"
+ - name: "Me"
+   link: "Me.html"
+ - name: "Posts"
+   link: "posts.html"
 
 
 plugins:
