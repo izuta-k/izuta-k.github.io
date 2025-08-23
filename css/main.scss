@@ -30,7 +30,7 @@
  *
  */
 
-$accent: #FF0F00;
+$accent: #007500;
 
 $max-width: 740px;
 $med-width: 600px;
@@ -83,18 +83,18 @@ code {
         margin: 0;
         padding: 5px 0 5px 0;
         margin-left: 20px;
-        color: #e6c700;
+        color: 0f0a01;
     }
     li {
         list-style-type: none;
         margin: 0 5px 0 10px;
-        color: #e6c700;
+        color: 0f0a01;
     }
 
     padding: 30px 0 20px 0;
     .site-title{
         font-size: 32px;
-        color: #ec6b2d;
+        color: 0f0a01;
         display: inline-block;
     }
 }
@@ -267,7 +267,7 @@ code {
     }
 
     .color-red {
-        color: #FF0F00;
+        color: #007500;
     }
     .color-orange {
         color: #eb9800;

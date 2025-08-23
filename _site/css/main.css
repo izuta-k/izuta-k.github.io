@@ -27,7 +27,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #FF0F00; }
+  color: #007500; }
 
 a:hover {
   text-decoration: underline; }
@@ -58,14 +58,14 @@ code {
     margin: 0;
     padding: 5px 0 5px 0;
     margin-left: 20px;
-    color: #e6c700; }
+    color: 0f0a01; }
   .navbar li {
     list-style-type: none;
     margin: 0 5px 0 10px;
-    color: #e6c700; }
+    color: 0f0a01; }
   .navbar .site-title {
     font-size: 32px;
-    color: #ec6b2d;
+    color: 0f0a01;
     display: inline-block; }
 
 .post-card {
@@ -187,7 +187,7 @@ code {
     margin: 5px 5px 5px 5px;
     max-width: 740px; }
   .content .color-red {
-    color: #FF0F00; }
+    color: #007500; }
   .content .color-orange {
     color: #eb9800; }
   .content .color-green {
