@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dijital Özgürlük
+tags: [Casual]
 ---
 
 

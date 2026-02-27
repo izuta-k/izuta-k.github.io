@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ne Yaşandı?
+tags: [Politics]
 ---
 
 # 19 Mart

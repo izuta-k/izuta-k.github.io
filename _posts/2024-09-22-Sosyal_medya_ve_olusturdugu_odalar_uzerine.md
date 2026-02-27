@@ -1,6 +1,7 @@
 ---
 title: Sosyal Medya ve Oluşturduğu Odalar Üzerine
 layout: post
+tags: [Casual]
 ---
 
 Sosyal medya ile büyüyen nesil yavaş yavaş aktif bir şekilde bu mecralarda kendilerini ifade edip seslerini de çıkartmaya başlıyor. Kendilerini ilgilendiren konularda online örgütlenme yollarını da deniyor ve henüz bir aktör olarak kendini gündemlerde sivriltebilecek bir boyut kazanmamış olsa da gün geçtikçe bu kitlenin büyük oranda kararsız ve partiler arasında kalmış tam bir dünya görüşü oturmamış ve olabildiğince çıkarcı bir şekilde dünyaya doğrular ve yanlışlar vardır gibi ekstrem bir noktadan baktığını görüyoruz. 

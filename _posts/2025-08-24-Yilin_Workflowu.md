@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Yılın Workflowu
+tags: [Casual]
 ---
 
 # 3 Defter

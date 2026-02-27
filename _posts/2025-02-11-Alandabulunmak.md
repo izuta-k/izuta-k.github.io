@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Alanda bulunmak
+tags: [Casual]
 ---
 
 Ağustos gibi Özdilek Starbucksta arkadaşımla(kaan) kahve içerken oturmayı tercih ettiğimiz yerleri karşılaştırmıştık. Kaan sokakta insanların hareket halinde olduğu yerleri tercih ettiğini söylerken, ben özellikle hareket olmayan ve koltukta yayılarak oturabileceğim bir yerde içmeyi tercih ettiğimi söylemiştim.

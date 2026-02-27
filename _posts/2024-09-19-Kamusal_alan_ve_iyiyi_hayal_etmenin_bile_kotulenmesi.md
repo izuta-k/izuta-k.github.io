@@ -1,6 +1,7 @@
 ---
 title: Kamusal Alan ve İyiyi Hayal Etmenin Bile Kötülenmesi
 layout: post
+tags: [Casual]
 ---
 > Bu yazı da bloggerdan çektiğim eski bir yazım. Kötü ama olduğu gibi koymak daha hoş geldi bana. Eskiden çok gelişine yazı yazıp paylaşıyor olduğumu görmek çok ilginç hissettiriyor. Postun başlığı bile ne bu yani dedirtiyor. Yaklaşık bir yılda ne kadar yol aldım bilmiyorum ama kesinlikle ilerlemişim. (24.08.2025)
 

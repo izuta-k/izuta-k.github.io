@@ -1,329 +1,217 @@
 ---
 ---
-// Customization Variables
-
-// SWISS DESIGN COLORS
-// Swiss Orange bright: ec6b2d
-// Swiss Black        : 0d0f05
-// Swiss Gray         : 333333
-// Swiss Title        : 0b3536
-
-
-/*LIBERTINUS CSS CLASSES
- * .libertinus-sans-regular {
- *  font-family: "Libertinus Sans", sans-serif;
- *  font-weight: 400;
- *  font-style: normal;
- * }
- *
- * .libertinus-sans-bold {
- *  font-family: "Libertinus Sans", sans-serif;
- *  font-weight: 700;
- *  font-style: normal;
- * }
- *
- * .libertinus-sans-regular-italic {
- *  font-family: "Libertinus Sans", sans-serif;
- *  font-weight: 400;
- *  font-style: italic;
- * }
- *
- */
-
-$accent: #007500;
-
+// 1. VARIABLES
+$navy: #1A365D;
+$grey-bg: #dfe0e2;
 $max-width: 740px;
-$med-width: 600px;
-$small-width: 480px;
 
-// Basic
-
+// 2. CORE DEFAULTS
 body {
     margin: 0;
-    font-family: "Libertinus Sans", sans-serif;
-    background-color: #dfe0e2;
-    min-height: 100%;
-    text-align: justify;
-}
-a {
-    text-decoration: none;
-    color: $accent;
-}
-a:hover {
-    text-decoration: underline;
-}
-hr {
-    margin: 5px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-code {
-    background-color: #d8e7ff;
-    color: #002b72;
+    font-family: 'Inter', sans-serif;
+    background-color: $grey-bg;
+    color: #333;
+    line-height: 1.6;
 }
 
-// divs
-
-.pull-left {
-    float: left;
-}
-.pull-right {
-    float: right;
-}
 .container {
     max-width: $max-width;
     margin: auto;
+    padding: 0 20px;
 }
 
-// Navbar
+a {
+    text-decoration: none;
+    color: $navy;
+    transition: 0.2s;
+    &:hover { text-decoration: underline; }
+}
 
+// 3. NAVIGATION
 .navbar {
+    padding: 40px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .site-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
     ul {
-        display: inline-block;
-        margin: 0;
-        padding: 5px 0 5px 0;
-        margin-left: 20px;
-        color: 0f0a01;
-    }
-    li {
-        list-style-type: none;
-        margin: 0 5px 0 10px;
-        color: 0f0a01;
-    }
-
-    padding: 30px 0 20px 0;
-    .site-title{
-        font-size: 32px;
-        color: 0f0a01;
-        display: inline-block;
-    }
-}
-
-// index
-.post-card{
-    margin-top:1em;
-    margin-bottom:1em;
-    .title{
-        max-width: 500px;
-        color: #0b3536;
-        display: inline-block;
-        font-size: 30px;
-    }
-    .details{
-        @extend .pull-right;
-        text-align: right;
-        margin-left: 20px;
-        font-size: 15px;
-    }
-    .subtitle{
-        max-width: 500px;
-    }
-}
-
-.no-post{
-    text-align: center;
-    margin-top: 10px;
-    font-style: italic;
-}
-
-// pages
-
-.page-title{
-    text-align: center;
-    font-size: xx-large;
-    font-weight: bold;
-    line-height: 2;
-    color: #0b3536;
-}
-.page-subtitle{
-    text-align: center;
-    margin-bottom: 1em;
-    color: #0b3536;
-}
-
-// footer
-
-.footer{
-    a {
-        color:black;
-    }
-    font-size: small;
-    margin-top: 2em;
-    margin-bottom: 1em;
-}
-
-// Mobile
-
-@media (max-width: 800px) {
-    .container {
-        max-width: $med-width;
-        transition: 0.3s ease all;
-    }
-}
-
-@media (max-width: 650px) {
-    .container {
-        max-width: 83%;
-    }
-    .navbar{
-        ul{
-            margin-top: 5px;
-        }
-    }
-}
-
-@media (max-width: 500px) {
-	.navbar {
-		text-align: center;
-        padding: 50px 0px 0px 0px;
-        ul{
-            padding: 10px 0 10px 0;
-            margin: 0;
-            display: block;
-            float: none;
-            text-align: center;
-            width: 100%;
-        }
-        li{
-            margin: 0;
-        }
-        .pull-left{
-            float: none;
-        }
-        .site-title{
-            width: 100%;
-            float: none;
-        }
-	}
-}
-
-//  typography
-
-.content {
-    line-height: 1.2;
-    h1, h2, h3, h4 {
-        text-align: left;
-        color: #0b3536;
-    }
-    h1:after, h2:after, h3:after, h4:after {
-        text-align: left;
-        content: '';
-        display: block;
-        width: 50%;
-        border-top: 0.5px solid rgba(0, 0, 0, 0.1);
-        border-bottom: 0.5px solid rgba(50, 50, 50, 0.3);
-    }
-
-    ol {
-        color: #635045;
-        counter-reset: list;
-    }
-    ol > li {
-        list-style-position: none;
-        position: relative;
+        display: flex;
+        gap: 15px;
         list-style: none;
-        margin-top: 3px;
-        margin-bottom: 3px;
+        margin: 0;
+        padding: 0;
     }
-    ul > li {
-        margin: 5px 0 5px 0;
+}
+
+// 4. POST GRID & CARDS
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.post-card {
+    background: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        border-color: $navy;
     }
-    ul {
-        padding: 0 5px 0 5px;;
+
+    .title {
+        font-family: 'Playfair Display', serif;
+        font-size: 22px;
+        color: #0b3536;
+        margin: 10px 0;
     }
-    ol {
-        padding: 0 5px 0 5px;
+
+    .details {
+        font-size: 0.8rem;
+        color: #666;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
-    ol > li:before {
-        content: "[" counter(list, decimal) "] ";
-        counter-increment: list;
-        position: absolute;
-        left: -15px;
+}
+
+// 5. CONTENT TYPOGRAPHY
+.content {
+    h1, h2, h3 {
+        font-family: 'Playfair Display', serif;
+        color: #0b3536;
+        margin-top: 1.5em;
     }
+
     blockquote {
-        border-left: 5px solid #333333;
-        margin: 5px 0;
-        padding: 0px 8px;
+        border-left: 4px solid $navy;
+        margin: 20px 0;
+        padding: 10px 20px;
+        background: rgba(255,255,255,0.5);
         font-style: italic;
     }
-    .profile-picture {
-        width: 15%;
-        margin: 5px 5px 5px 5px;
-        float: right;
-        p & {
-            padding: 0;
-            margin: 0;
-        }
-        @media (max-width: $small-width) {
-            img {
-                margin-top: -5px;
-            }
-        }
-    }
+
     img {
-        text-align: right;
-        margin: 5px 5px 5px 5px;
-        max-width: $max-width;
-    }
-
-    .color-red {
-        color: #007500;
-    }
-    .color-orange {
-        color: #eb9800;
-    }
-    .color-green {
-        color:#00eb1d;
-    }
-    .color-blue{
-        color: #0062ff;
-    }
-    .highlight-red {
-        background-color: #f54123;
-    }
-    .highlight-orange {
-        background-color: #ffd486;
-    }
-    .highlight-green {
-        background-color: #aaffad;
-    }
-    .highlight-blue {
-        background-color: #d8e7ff;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
     }
 }
 
-table {
-    margin: 15px 0;
-    border-collapse: collapse;
-    width: 100%;
-    padding: 0;
+// 6. RESPONSIVENESS
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .post-grid {
+        grid-template-columns: 1fr;
+    }
 }
-table tr {
-    border-top: 1px solid #cccccc;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-}
-table tr:nth-child(2n) {
-    background-color: #f8f8f8;
-}
-table tr th {
+
+/* Thumbnail Placeholder Style */
+.post-card-visual {
+    height: 120px;
+    margin: -25px -25px 20px -25px; /* Pulls it to the edges of the card */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1A365D; /* Default Navy */
+    color: rgba(255,255,255,0.2);
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
     font-weight: bold;
-    border: 1px solid #cccccc;
-    text-align: left;
-    margin: 0;
-    padding: 6px 13px;
-}
-table tr td {
-    border: 1px solid #cccccc;
-    text-align: left;
-    margin: 0;
-    padding: 6px 13px;
-}
-table tr th :first-child, table tr td :first-child {
-    margin: 0;
-}
-table tr th :last-child, table tr td :last-child {
-    margin: 0;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
 }
 
+/* Category Color Coding */
+/* These match your common tags like #Sociology or #History */
+.post-card.sociology .post-card-visual { background-color: #2D6A4F; } /* Deep Green */
+.post-card.history .post-card-visual { background-color: #8B4513; }   /* Burnt Sienna */
+.post-card.economics .post-card-visual { background-color: #4A4E69; } /* Slate Blue */
+.post-card.urbanstudies .post-card-visual { background-color: #D4A373; } /* Earthy Sand */
+.post-card.politics .post-card-visual { background-color: #4A235A; }   /* Royal Purple */
+
+
+/* Abstract Pattern Overlay */
+.post-card-visual::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    opacity: 0.1;
+    background-image: radial-gradient(#ffffff 1px, transparent 1px);
+    background-size: 15px 15px;
+}
+
+/* Base Thumbnail Style */
+.post-card-visual {
+    height: 100px;
+    margin: -25px -25px 15px -25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1A365D; /* Default Navy */
+    position: relative;
+    overflow: hidden;
+}
+
+.category-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.15);
+    font-weight: bold;
+}
+
+/* Tag-Specific Colors */
+.tag-sociology .post-card-visual { background-color: #2D6A4F; }   /* Forest Green */
+.tag-history .post-card-visual { background-color: #7B241C; }     /* Deep Red */
+.tag-economics .post-card-visual { background-color: #21618C; }   /* Steel Blue */
+.tag-urbanstudies .post-card-visual { background-color: #B7950B; } /* Golden Mustard */
+.tag-Politics .post-card-visual { background-color: #4A235A; }   /* Royal Purple */
+
+/* Subtle Pattern Overlay for Appeal */
+.post-card-visual::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: linear-gradient(45deg, rgba(255,255,255,0.05) 25%, transparent 25%);
+    background-size: 20px 20px;
+}
+
+
+/* Container for the letters */
+.tag-letters {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.tag-char {
+    font-family: 'Playfair Display', serif; /* Using your academic serif font */
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.25); /* Subtle transparency for a modern look */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Make letters smaller if there are many tags */
+.tag-letters:has(.tag-char:nth-child(3)) .tag-char {
+    font-size: 2.5rem;
+}

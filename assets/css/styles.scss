@@ -2,3 +2,82 @@
 ---
 
 @import "main";
+
+/* Container for the whole page */
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+/* The Card */
+.post-card {
+    background: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-color: #1A365D; /* Navy Blue instead of the bright green */
+}
+
+/* Header Info */
+.post-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.post-date {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    color: #6a737d;
+    font-weight: 600;
+}
+
+.tag-pill {
+    font-size: 0.7rem;
+    background: #f1f8ff;
+    color: #0366d6;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* Typography */
+.post-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.post-title a {
+    text-decoration: none;
+    color: #1A365D;
+}
+
+.post-excerpt {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+    flex-grow: 1; /* Pushes the button to the bottom */
+}
+
+.read-more-btn {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #1A365D;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
