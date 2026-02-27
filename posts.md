@@ -1,6 +1,7 @@
 ---
-layout: default
-title: Yazılar
+layout: page
+title: ARCHIVE
+permalink: /posts/
 ---
 
 
