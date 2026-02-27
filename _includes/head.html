@@ -1,22 +1,32 @@
 <head>
-    {% if page.title %}
-        {% assign title = page.title | append: " - " | append: site.title %}
-        {% assign desc = page.subtitle %}
-    {% else %}
-        {% assign title = site.title %}
-        {% assign desc = site.subtitle %}
-    {% endif %}
-    {% assign sitedir = site.url | append: site.baseurl | append: "/" %}
-    {% assign favicon_location = sitedir | append: site.favicon_location %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>{{ title }}</title>
+  {% if page.title %}
+    <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+  {% else %}
+    <title>{{ site.title | escape }} | {{ site.subtitle | escape }}</title>
+  {% endif %}
 
+  {% assign meta_desc = page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape %}
+  <meta name="description" content="{{ meta_desc }}">
+  <meta name="author" content="{{ site.author | default: 'Boran Takak' }}">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% assign canonical_url = page.url | replace: 'index.html', '' | absolute_url %}
+  <link rel="canonical" href="{{ canonical_url }}">
 
-    <link rel="stylesheet" href="{{ sitedir }}css/main.css">
+  <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+  <meta property="og:description" content="{{ meta_desc }}">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}">
+  <meta name="twitter:description" content="{{ meta_desc }}">
 
-    <!-- Refining the looks -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+
+  {% assign sitedir = site.url | append: site.baseurl | append: "/" %}
+  <link rel="stylesheet" href="{{ sitedir }}css/main.css">
 </head>

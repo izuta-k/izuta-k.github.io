@@ -226,3 +226,287 @@ body {
 .post-card {
     animation: swissFadeIn 0.3s ease-out forwards;
 }
+
+
+/* =========================================
+ *  SWISS POST & PAGE LAYOUTS
+ = *======================================== */
+
+/* Constrain the reading width for perfect legibility */
+.swiss-post, .swiss-page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.post-accent-bar {
+    height: 12px;
+    width: 100%;
+    margin-bottom: 40px;
+    background-color: #111111; /* Default Black */
+}
+
+/* Titles */
+.post-title, .page-title {
+    font-weight: 900;
+    font-size: 4rem; /* Massive, poster-style headers */
+    line-height: 0.95;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    margin: 0 0 40px 0;
+    color: #111111;
+    word-break: break-word;
+}
+
+.page-title {
+    border-bottom: 4px solid #111111;
+    padding-bottom: 20px;
+}
+
+/* The Meta "Spec Sheet" */
+.post-meta-specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    border-top: 2px solid #111111;
+    border-bottom: 2px solid #111111;
+    padding: 15px 0;
+    margin-bottom: 60px;
+}
+
+.spec-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.spec-label {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: #666;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.spec-value {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #111111;
+}
+
+/* -----------------------------------------
+ *  MARKDOWN CONTENT TYPOGRAPHY
+ - *---------------------------------------- */
+.post-content, .page-content {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #111111;
+}
+
+/* Subheaders get heavy underlines */
+.post-content h2, .page-content h2 {
+    font-weight: 900;
+    font-size: 2rem;
+    letter-spacing: -1px;
+    margin: 3rem 0 1rem 0;
+    border-bottom: 2px solid #111111;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.post-content p, .page-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* Swiss blockquotes don't use italics. They use heavy structural borders. */
+.post-content blockquote {
+    border-left: 8px solid #EC6B2D; /* Swiss Orange Accent */
+    margin: 2.5rem 0;
+    padding: 10px 20px;
+    background: #f4f5f6;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+/* Images become sharp and structural */
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 3rem 0;
+    border: 2px solid #111111; /* Sharp framing */
+}
+
+/* =========================================
+ *  SWISS HEADER & FOOTER
+ = *======================================== */
+
+/* THE HEADER */
+.site-header {
+    border-bottom: 4px solid #111111; /* Heavy architectural beam */
+    background-color: #f4f5f6;
+    padding: 30px 20px 20px 20px;
+    margin-bottom: 60px;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Aligns text to the exact baseline */
+}
+
+.site-title {
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+    line-height: 0.8;
+    color: #111111;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.site-title:hover {
+    color: #EC6B2D; /* Swiss Orange hover state */
+}
+
+/* THE NAVIGATION */
+.site-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    font-weight: 800;
+    font-size: 0.9rem;
+    color: #111111;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid #EC6B2D;
+}
+
+/* THE FOOTER */
+.site-footer {
+    border-top: 4px solid #111111;
+    background-color: #111111; /* Inverted for weight */
+    color: #ffffff;
+    padding: 60px 20px;
+    margin-top: 100px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-heading {
+    font-weight: 900;
+    font-size: 1.2rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+    color: #EC6B2D;
+}
+
+.footer-link, .footer-text {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .site-nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+
+/* =========================================
+ *  HOMEPAGE HERO SECTION
+ = *======================================== */
+.swiss-hero {
+    max-width: 1000px;
+    margin: 80px auto 100px auto;
+    padding: 0 20px;
+    border-left: 8px solid #EC6B2D; /* Massive orange structural beam */
+    padding-left: 40px;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 5rem;
+    line-height: 0.9;
+    letter-spacing: -3px;
+    color: #111111;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+}
+
+.hero-subtitle {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: #666666;
+    max-width: 600px;
+    margin: 0;
+}
+
+.section-divider {
+    font-weight: 900;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    border-bottom: 4px solid #111111;
+    padding-bottom: 10px;
+    margin: 0 20px 40px 20px;
+    max-width: 1200px;
+}
+
+/* Make it responsive for mobile */
+@media (max-width: 768px) {
+    .hero-title { font-size: 3rem; }
+    .swiss-hero { border-left-width: 4px; padding-left: 20px; }
+}
+
+
+/* Remove redundant page titles to save space */
+.swiss-page .page-header {
+    display: none;
+}
+
+/* Adjust the top padding of the content so it sits nicely below the header */
+.swiss-page {
+    padding-top: 20px;
+}

@@ -1,0 +1,42 @@
+<div class="post-grid">
+  {% for post in site.posts limit: 3 %}
+    {% assign primary_tag = post.tags | first | slugify %}
+
+    <article class="post-card tag-{{ primary_tag }}">
+      <div class="post-card-visual">
+        <div class="tag-letters">
+          {% for tag in post.tags %}
+            {% assign tag_slug = tag | slugify %}
+            <span class="tag-char">
+              {% case tag_slug %}
+                {% when 'urban-studies' %}URBANISME
+                {% when 'urbanstudies' %}URBANISME
+                {% when 'politics' %}POL
+                {% when 'sociology' %}SOCIO
+                {% when 'history' %}HIST
+                {% when 'economics' %}ÉCON
+                {% when 'data-visualisation' %}DATAVIZ
+                {% when 'datavisualisation' %}DATAVIZ
+                {% when 'data' %}DATA
+                {% when 'casual' %}NOTES
+                {% else %}{{ tag | upcase }}
+              {% endcase %}
+            </span>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="post-card-content">
+        <div class="details">{{ post.date | date: '%Y %b %d' }}</div>
+        <h2 class="title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
+
+        <div class="post-tags-row">
+          {% for tag in post.tags %}
+            <span class="mini-tag">#{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+</div>
