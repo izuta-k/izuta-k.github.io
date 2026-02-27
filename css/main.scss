@@ -27,26 +27,31 @@ body {
 /* 3. SWISS CARDS (Sharp, Bold, Geometric) */
 .post-card {
     background: $white;
-    border: 3px solid $black; /* Thick, structural borders */
-    border-radius: 0; /* No rounded corners in Swiss design */
+    /* Maintain the strict Swiss border, but consider reducing it slightly for smaller cards */
+    border: 2px solid $black;
+    border-radius: 0;
     display: flex;
     flex-direction: column;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
+    overflow: hidden; /* Important for sharp edges */
 }
 
-/* Neo-Swiss Hover Effect: A sharp, solid drop instead of a blurry shadow */
+/* Maintain Neo-Swiss Hover State */
 .post-card:hover {
-    transform: translate(-6px, -6px);
-    box-shadow: 10px 10px 0px $black;
+    transform: translate(-4px, -4px);
+    box-shadow: 8px 8px 0px $black;
 }
 
-/* 4. THE THUMBNAILS (Color Coded & Tag Letters) */
+/* The New, Smaller Post Card Visual (Reduced Space)
+ *  A minimal, colored bar at the top of the card.
+ */
 .post-card-visual {
-    height: 140px;
-    border-bottom: 3px solid $black; /* Distinct separation */
+    height: 20px; /* Drastically reduced from previous size */
+    border-bottom: 2px solid $black;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Vertically center initials */
+    justify-content: flex-start; /* Place initials on the left */
+    padding: 0 10px; /* Small inner padding */
     background-color: $black; /* Default fallback */
 }
 
@@ -56,29 +61,39 @@ body {
 .tag-economics .post-card-visual { background-color: #FFCC00; } /* Bright Yellow */
 .tag-urbanstudies .post-card-visual { background-color: #009E60; } /* Pure Green */
 
+/* Tag Letters (Now smaller and side-aligned)
+ */
 .tag-letters {
     display: flex;
-    gap: 4px;
+    gap: 15px; /* Wider gap so words don't run into each other */
 }
 
 .tag-char {
     font-family: 'Inter', sans-serif;
-    font-size: 5rem;
-    font-weight: 900; /* Maximum boldness */
+    font-size: 0.85rem; /* slightly smaller to fit longer words */
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px; /* Positive spacing makes words easier to read */
     line-height: 1;
-    color: $white;
-    letter-spacing: -3px; /* Tight tracking is very Swiss */
 }
 
-/* If the background is yellow, make the letter black for contrast */
-.tag-economics .tag-char { color: $black; }
+/* Correct contrast for light-colored tags in the small visual bar */
+.tag-economics .tag-char,
+.tag-casual .tag-char,
+.tag-datavisualisation .tag-char {
+    color: #111111;
+}
 
-/* 5. CARD CONTENT TYPOGRAPHY */
+/* The Remaining Content (Margins adjusted to fit smaller header)
+ */
 .post-card-content {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    /* Shift content down slightly to give breathing room */
+    margin-top: 10px;
 }
 
 .details {
@@ -133,25 +148,31 @@ body {
 
 
 /* =========================================
- SWISS TAG COLOR PALETTE
- * ========================================= */
+ *  SWISS TAG COLOR PALETTE (Slugified)
+ = *======================================== */
 
 /* The Core Research */
-.tag-politics .post-card-visual { background-color: #EC6B2D; }        /* Swiss Orange */
-.tag-urbanstudies .post-card-visual { background-color: #009E60; }    /* Pure Green */
-.tag-sociology .post-card-visual { background-color: #E32636; }       /* Swiss Red */
-.tag-history .post-card-visual { background-color: #0055A4; }         /* Pure Blue */
-.tag-economics .post-card-visual { background-color: #FFCC00; }       /* Bright Yellow */
+.tag-politics .post-card-visual { background-color: #EC6B2D; }
+.tag-urban-studies .post-card-visual,
+.tag-urbanstudies .post-card-visual { background-color: #009E60; }
+.tag-sociology .post-card-visual { background-color: #E32636; }
+.tag-history .post-card-visual { background-color: #0055A4; }
+.tag-economics .post-card-visual { background-color: #FFCC00; }
 
 /* Data & Tech */
-.tag-data .post-card-visual { background-color: #3F00FF; }            /* Ultramarine */
-.tag-datavisualisation .post-card-visual { background-color: #00AEEF; } /* Cyan */
+.tag-data .post-card-visual { background-color: #3F00FF; }
+.tag-data-visualisation .post-card-visual,
+.tag-datavisualisation .post-card-visual { background-color: #00AEEF; }
 
 /* Other Interests */
-.tag-casual .post-card-visual { background-color: #E0E0E0; }          /* Stark Silver */
-.tag-football .post-card-visual { background-color: #111111; }        /* Solid Black */
-.tag-astrology .post-card-visual { background-color: #9B26B6; }       /* Deep Purple */
+.tag-casual .post-card-visual { background-color: #E2007A; }
 
+/* Force black text for maximum contrast on light backgrounds */
+.tag-economics .tag-char,
+.tag-data-visualisation .tag-char,
+.tag-datavisualisation .tag-char {
+    color: #111111;
+}
 
 
 
@@ -187,4 +208,21 @@ body {
     color: #ffffff;
     transform: translate(-2px, -2px); /* Slight brutalist lift */
     box-shadow: 4px 4px 0px #EC6B2D; /* Swiss Orange highlight */
+}
+
+
+/* Smooth fade-in animation for filtered cards */
+@keyframes swissFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.post-card {
+    animation: swissFadeIn 0.3s ease-out forwards;
 }

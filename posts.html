@@ -16,13 +16,30 @@ title: Yazılar
 
 <div class="post-grid">
   {% for post in site.posts %}
-    {% assign primary_tag = post.tags | first | downcase %}
+    {% assign primary_tag = post.tags | first | slugify %}
 
     <article class="post-card tag-{{ primary_tag }}" data-tags="{{ post.tags | join: ' ' | downcase }}">
       <div class="post-card-visual">
         <div class="tag-letters">
           {% for tag in post.tags %}
-            <span class="tag-char">{{ tag | slice: 0 | upcase }}</span>
+            {% assign tag_slug = tag | slugify %}
+            <span class="tag-char">
+              {% case tag_slug %}
+                {% when 'urban-studies' %}URBANISME
+                {% when 'urbanstudies' %}URBANISME
+                {% when 'politics' %}POL
+                {% when 'sociology' %}SOCIO
+                {% when 'history' %}HIST
+                {% when 'economics' %}ÉCON
+                {% when 'data-visualisation' %}DATAVIZ
+                {% when 'datavisualisation' %}DATAVIZ
+                {% when 'data' %}DATA
+                {% when 'casual' %}NOTES
+                {% when 'astrology' %}ASTRO
+                {% when 'football' %}FTBL
+                {% else %}{{ tag | upcase }}
+              {% endcase %}
+            </span>
           {% endfor %}
         </div>
       </div>
@@ -41,6 +58,7 @@ title: Yazılar
     </article>
   {% endfor %}
 </div>
+
 
 
 <script>

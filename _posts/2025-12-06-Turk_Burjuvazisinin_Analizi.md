@@ -2,7 +2,7 @@
 title: Türk Burjuvazisinin Tarihsel Analizi
 layout: post
 date: 2025-12-06
-tags: [Sociology, History]
+tags: [sociology, history]
 ---
 
 Yaklaşık 3.5 aydır bloga hiç bir yazı yazmıyor olmam sebebiyle bir kaç hafta önce bu dönem aldığım favori dersimle alakalı bir şeyler yazmıştım. Sonra tuttuğum notlara çok emek sarfettiğim ve bu notların 2-3 ay içinde üzücü bir şekilde hiç bir anlamı kalmayacağını farkedince en azından ortaya bir şey koymuş olayım diye detaylı bir blog yazısına çevireyim dedim. Bu yazdıklarımın hepsi aslında 2025 güz döneminde "Structure Sociale de la Turquie" dersinde işlenen ilk konunun derlenip toparlanmış hali. 
