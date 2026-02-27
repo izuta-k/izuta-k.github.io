@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Istanbul Public Transport Analyzer
-tags: [UrbanStudies, Data Visualisation, Data]
+tags: [UrbanStudies, DataVisualisation, Data]
 ---
 
 Son 1 aydır coursera üzerinden özellikle data science öğrenmek ve yapabilirsem yazın sonuna kadar biraz machine learning yetenekleri kazanabilmek için kurs alıyorum. Kursların formatı aslında biraz yavaş ama jupyterlab üzerinden yaptığım kod seansları sayesinde bir çok yeni kavram öğrendim. Yeni kavram oldukları içinde sadece öğrendiğimle kalıp unutmak istemiyorum pek bu bilgileri. Veri analizi ve python kütüphaneleri, sql gibi programlama dilleri 1 ayda birden şoklama usülü bünyeme dahil oldukları için bunları tutacak bir şeyler aradım o yüzden kendime. Bir proje bulayım ve en azından ilerde unutsam bile geriye dönüp bakıp tekrardan neyin nasıl yapıldığını görüp bilgilerimi tazeleyebileceğim bir şeyler. O yüzden bir şeyler öğrenmeyi en çok sevdiğim başlıklardan biri olan İstanbul halkının mobilizasyona dair bir şeyler yapayım dedim. Sonuçta insan yaşadığı yer hakkında bir şeyler bilmeden oraya ait de hissedemez.

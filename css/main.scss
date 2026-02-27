@@ -1,217 +1,190 @@
 ---
 ---
-// 1. VARIABLES
-$navy: #1A365D;
-$grey-bg: #dfe0e2;
-$max-width: 740px;
+/* SWISS VARIABLES */
+$black: #111111;
+$white: #ffffff;
+$grey-bg: #f4f5f6;
 
-// 2. CORE DEFAULTS
+/* 1. CORE TYPOGRAPHY (Inter Everywhere) */
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
     background-color: $grey-bg;
-    color: #333;
-    line-height: 1.6;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    color: $black;
+    -webkit-font-smoothing: antialiased;
 }
 
-.container {
-    max-width: $max-width;
-    margin: auto;
-    padding: 0 20px;
-}
-
-a {
-    text-decoration: none;
-    color: $navy;
-    transition: 0.2s;
-    &:hover { text-decoration: underline; }
-}
-
-// 3. NAVIGATION
-.navbar {
-    padding: 40px 0 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .site-title {
-        font-family: 'Playfair Display', serif;
-        font-size: 28px;
-        font-weight: bold;
-    }
-
-    ul {
-        display: flex;
-        gap: 15px;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-}
-
-// 4. POST GRID & CARDS
+/* 2. THE GRID (Keeping your old structure) */
 .post-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 25px;
-    margin: 20px 0;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* 3. SWISS CARDS (Sharp, Bold, Geometric) */
 .post-card {
-    background: #ffffff;
-    border: 1px solid #e1e4e8;
-    border-radius: 12px;
-    padding: 25px;
+    background: $white;
+    border: 3px solid $black; /* Thick, structural borders */
+    border-radius: 0; /* No rounded corners in Swiss design */
     display: flex;
     flex-direction: column;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-    &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-        border-color: $navy;
-    }
-
-    .title {
-        font-family: 'Playfair Display', serif;
-        font-size: 22px;
-        color: #0b3536;
-        margin: 10px 0;
-    }
-
-    .details {
-        font-size: 0.8rem;
-        color: #666;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-// 5. CONTENT TYPOGRAPHY
-.content {
-    h1, h2, h3 {
-        font-family: 'Playfair Display', serif;
-        color: #0b3536;
-        margin-top: 1.5em;
-    }
-
-    blockquote {
-        border-left: 4px solid $navy;
-        margin: 20px 0;
-        padding: 10px 20px;
-        background: rgba(255,255,255,0.5);
-        font-style: italic;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
+/* Neo-Swiss Hover Effect: A sharp, solid drop instead of a blurry shadow */
+.post-card:hover {
+    transform: translate(-6px, -6px);
+    box-shadow: 10px 10px 0px $black;
 }
 
-// 6. RESPONSIVENESS
-@media (max-width: 600px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-    .post-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Thumbnail Placeholder Style */
+/* 4. THE THUMBNAILS (Color Coded & Tag Letters) */
 .post-card-visual {
-    height: 120px;
-    margin: -25px -25px 20px -25px; /* Pulls it to the edges of the card */
+    height: 140px;
+    border-bottom: 3px solid $black; /* Distinct separation */
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1A365D; /* Default Navy */
-    color: rgba(255,255,255,0.2);
-    font-family: 'Playfair Display', serif;
-    font-size: 5rem;
-    font-weight: bold;
-    overflow: hidden;
-    border-radius: 10px 10px 0 0;
+    background-color: $black; /* Default fallback */
 }
 
-/* Category Color Coding */
-/* These match your common tags like #Sociology or #History */
-.post-card.sociology .post-card-visual { background-color: #2D6A4F; } /* Deep Green */
-.post-card.history .post-card-visual { background-color: #8B4513; }   /* Burnt Sienna */
-.post-card.economics .post-card-visual { background-color: #4A4E69; } /* Slate Blue */
-.post-card.urbanstudies .post-card-visual { background-color: #D4A373; } /* Earthy Sand */
-.post-card.politics .post-card-visual { background-color: #4A235A; }   /* Royal Purple */
+/* Swiss Colors are stark and vibrant, not muted */
+.tag-sociology .post-card-visual { background-color: #E32636; } /* Swiss Red */
+.tag-history .post-card-visual { background-color: #0055A4; }   /* Pure Blue */
+.tag-economics .post-card-visual { background-color: #FFCC00; } /* Bright Yellow */
+.tag-urbanstudies .post-card-visual { background-color: #009E60; } /* Pure Green */
 
-
-/* Abstract Pattern Overlay */
-.post-card-visual::after {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    opacity: 0.1;
-    background-image: radial-gradient(#ffffff 1px, transparent 1px);
-    background-size: 15px 15px;
-}
-
-/* Base Thumbnail Style */
-.post-card-visual {
-    height: 100px;
-    margin: -25px -25px 15px -25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #1A365D; /* Default Navy */
-    position: relative;
-    overflow: hidden;
-}
-
-.category-letter {
-    font-family: 'Playfair Display', serif;
-    font-size: 4rem;
-    color: rgba(255, 255, 255, 0.15);
-    font-weight: bold;
-}
-
-/* Tag-Specific Colors */
-.tag-sociology .post-card-visual { background-color: #2D6A4F; }   /* Forest Green */
-.tag-history .post-card-visual { background-color: #7B241C; }     /* Deep Red */
-.tag-economics .post-card-visual { background-color: #21618C; }   /* Steel Blue */
-.tag-urbanstudies .post-card-visual { background-color: #B7950B; } /* Golden Mustard */
-.tag-Politics .post-card-visual { background-color: #4A235A; }   /* Royal Purple */
-
-/* Subtle Pattern Overlay for Appeal */
-.post-card-visual::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background-image: linear-gradient(45deg, rgba(255,255,255,0.05) 25%, transparent 25%);
-    background-size: 20px 20px;
-}
-
-
-/* Container for the letters */
 .tag-letters {
     display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+    gap: 4px;
 }
 
 .tag-char {
-    font-family: 'Playfair Display', serif; /* Using your academic serif font */
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.25); /* Subtle transparency for a modern look */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Inter', sans-serif;
+    font-size: 5rem;
+    font-weight: 900; /* Maximum boldness */
+    line-height: 1;
+    color: $white;
+    letter-spacing: -3px; /* Tight tracking is very Swiss */
 }
 
-/* Make letters smaller if there are many tags */
-.tag-letters:has(.tag-char:nth-child(3)) .tag-char {
-    font-size: 2.5rem;
+/* If the background is yellow, make the letter black for contrast */
+.tag-economics .tag-char { color: $black; }
+
+/* 5. CARD CONTENT TYPOGRAPHY */
+.post-card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.details {
+    font-weight: 800;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid $black; /* Structural dividing line */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin: 0 0 1rem 0;
+}
+
+.title a {
+    color: $black;
+    text-decoration: none;
+}
+
+.excerpt {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+/* 6. TAG PILLS (Sharp and Blocky) */
+.post-tags-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    border-top: 2px solid $black; /* Structural dividing line */
+    padding-top: 1rem;
+}
+
+.mini-tag {
+    font-weight: 800;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    background: $black;
+    color: $white;
+    padding: 4px 8px;
+    border-radius: 0; /* Sharp rectangle */
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+ SWISS TAG COLOR PALETTE
+ * ========================================= */
+
+/* The Core Research */
+.tag-politics .post-card-visual { background-color: #EC6B2D; }        /* Swiss Orange */
+.tag-urbanstudies .post-card-visual { background-color: #009E60; }    /* Pure Green */
+.tag-sociology .post-card-visual { background-color: #E32636; }       /* Swiss Red */
+.tag-history .post-card-visual { background-color: #0055A4; }         /* Pure Blue */
+.tag-economics .post-card-visual { background-color: #FFCC00; }       /* Bright Yellow */
+
+/* Data & Tech */
+.tag-data .post-card-visual { background-color: #3F00FF; }            /* Ultramarine */
+.tag-datavisualisation .post-card-visual { background-color: #00AEEF; } /* Cyan */
+
+/* Other Interests */
+.tag-casual .post-card-visual { background-color: #E0E0E0; }          /* Stark Silver */
+.tag-football .post-card-visual { background-color: #111111; }        /* Solid Black */
+.tag-astrology .post-card-visual { background-color: #9B26B6; }       /* Deep Purple */
+
+
+
+
+/* SWISS TAG FILTER MENU */
+.tag-filter-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 40px;
+    border-bottom: 4px solid #111111; /* Heavy structural line */
+    padding-bottom: 20px;
+}
+
+.filter-btn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: transparent;
+    border: 2px solid #111111;
+    color: #111111;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 0; /* Sharp corners */
+    transition: all 0.1s ease;
+}
+
+/* The Active / Hover State */
+.filter-btn:hover,
+.filter-btn.active {
+    background: #111111;
+    color: #ffffff;
+    transform: translate(-2px, -2px); /* Slight brutalist lift */
+    box-shadow: 4px 4px 0px #EC6B2D; /* Swiss Orange highlight */
 }
