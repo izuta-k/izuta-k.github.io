@@ -6,10 +6,10 @@ permalink: /me/
 
 I am a senior bachelor's student focusing on regional development, urban transformation, and political economy. My work frequently combines spatial data analysis with socio-political frameworks to understand how urban infrastructure shapes structural and electoral realities. 
 
-Following a Francophone bachelor's degree at Marmara University, my current trajectory is focused on graduate research in Canada, applying data-driven methodologies to urban studies.
+Following my Francophone bachelor's degree at Marmara University, my current trajectory is focused on graduate research in Canada, applying data-driven methodologies to urban studies.
 
 ## Academic Profile
-> **Degree:** Francophone Bachelor's in Political Science & International Relations, Marmara University
+> **Degree:** Francophone Bachelor's in Political Science & Public Administration, Marmara University
 > **Academic Standing:** 78.4/100 Average
 > **Status:** 2026 Graduate Applicant targeting Regional Development programs in Quebec/Canada
 
