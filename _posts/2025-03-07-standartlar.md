@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Standartlar
-tags: [Casual]
+tags: [casual]
 ---
 
 # Fikirlerin paylaşılması

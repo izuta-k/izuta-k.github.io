@@ -36,8 +36,6 @@ permalink: /posts/
                 {% when 'datavisualisation' %}DATAVIZ
                 {% when 'data' %}DATA
                 {% when 'casual' %}NOTES
-                {% when 'astrology' %}ASTRO
-                {% when 'football' %}FTBL
                 {% else %}{{ tag | upcase }}
               {% endcase %}
             </span>

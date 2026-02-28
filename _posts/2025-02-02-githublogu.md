@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Şubat ayı workflow planı
-tags: [Casual]
+tags: [casual]
 ---
 
 # Şubat Ayı Workflow Planı

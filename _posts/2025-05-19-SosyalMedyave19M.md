@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sosyal Medya ve 19 Mart
-tags: [Politics, Social Media]
+tags: [politics, socialmedia]
 ---
 
 

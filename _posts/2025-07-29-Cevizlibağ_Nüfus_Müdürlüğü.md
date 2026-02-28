@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cevizlibağ Nüfus Müdürlüğü
-tags: [Casual]
+tags: [casual]
 ---
 
 Geçtiğimiz pazar günü motorsiklet direksiyon sınavını geçtim ve ehliyetimi A sınıfına güncellemek için ilk bulduğum nüfus müdürlüğünden randevu aldım. Randevu aldığım yer Cevizlibağ Nüfus Müdürlüğüydü. 
