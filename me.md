@@ -6,7 +6,7 @@ permalink: /me/
 
 I am an aspiring urban scholar with a background in Political Science, focused on the intersection of state-led gentrification, informal social networks, and urban resilience.
 
-Currently a senior student in the Francophone program at Marmara University, I seek to study more about the effects of the rapid city expansions in developing countries.
+Currently a senior student in the Francophone Political Science program at Marmara University, I seek to study more about the effects of the rapid city expansions in developing countries.
 
 ## Research Interests
 
