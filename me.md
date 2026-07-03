@@ -4,21 +4,12 @@ title: ME
 permalink: /me/
 ---
 
-I am an aspiring urban scholar with a background in Political Science, focused on the intersection of state-led gentrification, informal social networks, and urban resilience.
-
-Currently a senior student in the Francophone Political Science program at Marmara University, I seek to study more about the effects of the rapid city expansions in developing countries.
+I am an aspiring urban scholar with a bachelors in Political Science and Public Administration, focused on the intersection of urban social engineering, informal social networks, and socio-spatial resilience. My current goal is a masters in urban studies.
 
 ## Research Interests
 
-My work focuses on how urban forms are instrumentalized for social and political reconfiguration:  
+Right now I am interested in learning more about how massive projects made by the state transform the society. Istanbul is an amazing city for this topic but I have spent almost all of my life in Istanbul and I fill a lot of questions automatically that would otherwise lead me to understand more. Which is why I am currently looking for another city that I could study more effectively. 
 
-Urban Resilience & Crisis Governance: Analyzing the socio-spatial realities of cities under extreme pressure, specifically how informal networks compensate for gaps in state responsiveness following catastrophes.  
-
-Socio-Spatial Agency: Investigating the city as a site of constant negotiation between diverse actors and administrative structures, particularly in high-density urban cores like Beyoğlu and Beşiktaş.  
-
-Political Economy of State-Formation: Tracking the evolution of informal settlements (gecekondu) into marketized commodities and the subsequent alienation of the working class through mass housing policies.  
-
-Differentiated Invisibilization: Studying how marginalized populations navigate the metropolitan condition and integrate into the urban fabric outside of formal institutional sight.  
 
 ## Technical
 > Data & Spatial: Python (NumPy, pandas, matplotlib, SciPy), QGIS, SQL, Excel
