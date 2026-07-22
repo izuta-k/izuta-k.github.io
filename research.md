@@ -4,23 +4,23 @@ title: RESEARCH
 permalink: /research/
 ---
 
-<div class="research-archive">
+<div>
   {% assign research_groups = site.research | group_by: 'type' %}
   
   {% for group in research_groups %}
-    <h2 class="section-divider">{{ group.name | upcase }}S</h2>
+    <h2>{{ group.name | upcase }}S</h2>
     
-    <div class="post-grid">
+    <div>
       {% for item in group.items %}
-        <article class="post-card">
-          <div class="post-card-content">
-            <div class="details">{{ item.date | date: "%Y" }}</div>
-            <h2 class="title">
+        <article>
+          <div >
+            <div>{{ item.date | date: "%Y" }}</div>
+            <h2>
               <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
             </h2>
-            <p class="excerpt">{{ item.excerpt }}</p>
-            <div class="post-tags-row">
-              <span class="mini-tag">#{{ item.type | lowercase }}</span>
+            <p>{{ item.excerpt }}</p>
+            <div>
+              <span>#{{ item.type | lowercase }}</span>
             </div>
           </div>
         </article>

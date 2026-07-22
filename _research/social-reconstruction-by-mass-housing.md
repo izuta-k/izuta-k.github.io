@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "Social Reconstruction of the Working Class by Mass Housing Policies in Turkey"
 type: "Dissertation"
 date: 2026-02-28

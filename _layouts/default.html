@@ -1,25 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
   {% include head.html %}
 
+
   <body>
-    <header class="site-header">
-      <div class="header-container">
-        <a class="site-title" href="{{ '/' | relative_url }}">BORAN TAKAK</a>
-        <nav class="site-nav">
-          <a href="{{ '/research/' | relative_url }}" class="nav-link">RESEARCH</a>
-          <a href="{{ '/posts/' | relative_url }}" class="nav-link">ARCHIVE</a>
-          <a href="{{ '/me/' | relative_url }}" class="nav-link">ME</a>
-        </nav>
-      </div>
-    </header>
+    {% include header.html %}
 
-    <main class="page-content" aria-label="Content">
-      {{ content }}
-    </main>
 
-    {% include footer.html %}
+    {{content}}
 
   </body>
+
+
 </html>
