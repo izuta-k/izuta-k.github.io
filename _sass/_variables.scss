@@ -1,20 +1,29 @@
 
-
-
-
 :root{
     /* Colors */
-    --bg-color: #ebebd3;
-    --text-main: #3c3c3b;
+    --bg-color: #8f8f8f;
+    --text-main: #ffffff;
     --text-muted: #555555;
-    --accent: #db3069;
-
+    --accent: #0a0410;
+    --border-color: #340917;
     /* Typography */
     --font-sans: system-ui, --apple-system, sans-serif;
     --font-serif: Georgia, "Times New Roman", serif;
-
+    --font-mono: ;
     /* Layout */
     --content-width: 65ch;
 
+    /* Header variables  */
+    --header-background: #fca311;
 
+    //* Footer variables  */
+    --footer-background: #fca311;
+
+    /* Outline */
+    --outline-variant: #0a0a0a;
+
+    /* Posts scss*/
+    --surface-container-low: #A6CFD5 ;
+    --font-mono-color: #44bba4 ;
+    
 }

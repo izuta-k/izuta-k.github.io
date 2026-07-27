@@ -5,20 +5,20 @@ permalink: /posts/
 ---
 
 
-<div>
+<div class="postlist">
   {% for post in site.posts %}
-    {% assign primary_tag = post.tags | first | slugify %}
 
-
-      <div>
-        <div>{{ post.date | date: '%Y %b %d' }}</div>
+      <div class="poststrip">
+        <div class="postlistdate">{{ post.date | date: '%Y %b %d' }}</div>
+        <div class="post-content">
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt | strip_html | truncatewords: 15 }}</p>
 
-        <div>
+        <div class="posttag">
           {% for tag in post.tags %}
-            <span>#{{ tag }}</span>
+            <span>#{{ tag | slugify }}</span>
           {% endfor %}
+      </div>
+          
         </div>
       </div>
   {% endfor %}

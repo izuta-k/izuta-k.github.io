@@ -1,0 +1,52 @@
+.postlist {
+    margin-top: 2rem;
+    border-top: 1px solid var(--outline-variant);
+}
+
+.poststrip {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--outline-variant);
+    transition: background-color 0.2s ease;
+}
+
+.poststrip:hover {
+    background-color: var(--surface-container-low);
+}
+
+.postlistdate {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--text-mono-color);
+    min-width: 120px;
+    flex-shrink: 0;
+
+    &::after {
+        content: " \2192";
+        margin-left: 0.5rem;
+        color: var(--outline-variant);
+    }
+}
+
+.poststrip h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.posttag {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+
+    span {
+        background: var(--surface-container);
+        padding: 0.1rem 0.4rem;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+}
