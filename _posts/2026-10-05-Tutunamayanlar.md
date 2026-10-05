@@ -1,6 +1,7 @@
 ---
 title: Tutunamayanlar
 layout: post
+tags: casual
 ---
 !!! Yazı spoiler içerir !!!
 
